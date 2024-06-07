@@ -23,7 +23,7 @@ export default async function Cards() {
     if (card.image_uris) {
 
       return(
-          <div className="container mx-auto">
+          <div className="container">
               <table className="table table-zebra">
                   {/* <Image height={500} width={500} src={card.image_uris} alt={""}></Image> */}
                   <tbody>

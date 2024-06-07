@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import NavBar from './NavBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,32 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="bumblebee">
       <body className={inter.className}>
+        <NavBar />
         <main>
-          <div className="navbar bg-base-100">
-            <div className="navbar-start">
-              <a className="btn btn-ghost text-xl">Dylan's App</a>
-            </div>
-            <div className="navbar-center hidden lg:flex">
-              <ul className="menu menu-horizontal px-1">
-                <li><Link href="/">Home</Link></li>
-                <li>
-                  <details>
-                    <summary>Users</summary>
-                      <ul className="p-2">
-                        <li><Link href="./users">List</Link></li>
-                        <li><a>Coming soon...</a></li>
-                      </ul>
-                  </details>
-                </li>
-                <li><Link href="/cards">Cards</Link></li>
-              </ul>
-            </div>
-            <div className="navbar-end">
-              <a className="btn">Button</a>
-            </div>
-          </div>
-      </main>
-        {children}    
+          {children} 
+        </main>  
       </body>
     </html>
   )
