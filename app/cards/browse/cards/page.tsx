@@ -1,33 +1,16 @@
 import React from 'react'
-import * as Scry from "scryfall-sdk";
+import Magic = require("mtgsdk-ts");
 
-interface Card {
-    name: string;
-}
+export default async function BrowseCards() {
 
-interface Props {
-    children: ReactNode;
-}
-
-
-export default async function BrowseCards({ children }: Props) {
-
-    // const card = Magic.Cards.find(() => console.log(card.name)
-
-    // const res = await fetch(
-    //     Magic.Cards.find("08618f8d5ebdc0c4d381ad11f0563dfebb21f4ee") ), { cache: 'no-store' })
-
-    // Magic.Cards.find("08618f8d5ebdc0c4d381ad11f0563dfebb21f4ee").then(result => console.log(result.name)); // Blood Scrivener
-
-
-    const card = await Scry.Cards.byName("Memory Lapse")
-
-
+    const cardResults: any[] = await Magic.Cards.where({name: "sylvan"})
 
     return (
         <div>
             <h1>Browse Cards Page</h1>
-            {card.uri}
+            {cardResults.map((card) => 
+                <p>{card.name}</p>
+            )}
         </div>
     )
 }
