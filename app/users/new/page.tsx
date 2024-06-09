@@ -2,7 +2,10 @@ import React from 'react'
 
 const NewUserPage = () => {
     return (
-        <div>NewUserPage</div>
+        <>
+            <div>NewUserPage</div>
+            <button className='btn btn-accent'>Create</button>
+        </>
     )
 }
 
