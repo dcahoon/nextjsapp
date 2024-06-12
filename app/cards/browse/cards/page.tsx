@@ -1,5 +1,5 @@
 import React from 'react'
-import Magic = require("mtgsdk-ts");
+import Magic from "mtgsdk-ts";
 import Link from 'next/link';
 
 interface Props {
