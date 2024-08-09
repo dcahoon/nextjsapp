@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^5.16.1",
     "@types/node": "20.12.12",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
@@ -21,6 +22,7 @@
     "mtgsdk-ts": "^1.1.2",
     "next": "14.2.3",
     "postcss": "8.4.38",
+    "prisma": "^5.16.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "scryfall-sdk": "^4.2.2",
