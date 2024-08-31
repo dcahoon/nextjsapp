@@ -1,0 +1,54 @@
+Name                                {card.name}
+ID                                  {card.id}
+Oracle ID                           {card.oracle_id}
+TCGPlayer ID                        {card.tcgplayer_id}
+Released                            {card.released_at}
+Scryfall URI                        {card.scryfall_uri}
+Layout                              {card.layout}
+Highres Img                         {card.highres_image}
+Image Status                        {card.image_status}
+Image URIs                          {JSON.stringify(card.image_uris)}
+Mana Cost                           {card.mana_cost}
+CMC                                 {card.cmc}
+Type Line                           {card.type_line}
+Oracle Text                         {card.oracle_text}
+Colors                              {card.colors}
+Color Identity                      {card.color_identity}
+Keywords                            {card.keywords}
+Legalities                          {JSON.stringify(card.legalities)}
+Games                               {card.games}
+Reserved                            {card.reserved}
+Finishes                            {card.finishes}
+Oversized                           {card.oversized}
+Promo                               {card.promo}
+Reprint                             {card.reprint}
+Variation                           {card.variation}
+Set ID                              {card.set_id}
+Set                                 {card.set}
+Set Name                            {card.set_name}
+Set Type                            {card.set_type}
+Set URI                             {card.set_uri}
+Set Search URI                      {card.set_search_uri}
+Scryfall Set URI                    {card.scryfall_set_uri}
+Rulings URI                         {card.rulings_uri}
+Prints Search URI                   {card.prints_search_uri}
+Collector Number                    {card.collector_number}
+Digital                             {card.digital}
+Rarity                              {card.rarity}
+Watermark                           {card.watermark}
+Card Back ID                        {card.card_back_id}
+Artist                              {card.artist}
+Artist IDs                          {card.artist_ids}
+Illustration ID                     {card.illustration_id}
+Border Color                        {card.border_color}
+Frame                               {card.frame}
+Security Stamp                      {card.security_stamp}
+Full Art                            {card.full_art}
+Textless                            {card.textless}
+Booster                             {card.booster}
+Story Spotlight                     {card.story_spotlight}
+EDHREC Rank                         {card.edhrec_rank}
+Prices                              {JSON.stringify(card.prices)}
+Related URIs                        {JSON.stringify(card.related_uris)}
+Purchase URIs                       {JSON.stringify(card.purchase_uris)}
+Card Faces                          {JSON.stringify(card.card_faces)}
